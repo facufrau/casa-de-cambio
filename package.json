@@ -1,0 +1,25 @@
+{
+  "name": "casa-de-cambio",
+  "version": "1.0.0",
+  "description": "Proyecto de un conversor de monedas con uso de API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/facufrau/casa-de-cambio.git"
+  },
+  "author": "facufrau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/facufrau/casa-de-cambio/issues"
+  },
+  "homepage": "https://github.com/facufrau/casa-de-cambio#readme",
+  "devDependencies": {
+    "cypress": "^8.4.0"
+  },
+  "dependencies": {
+    "http-server": "^13.0.2"
+  }
+}
