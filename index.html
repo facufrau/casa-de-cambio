@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de cambio</title>
+</head>
+<body>
+    <div class="titulos">
+        <img src="src/images/logo.png">
+        <h1>Casa de cambio</h1>        
+    </div>
+
+    <div class="inputs-container">
+        <h2>Datos a consultar</h2>
+        <form id="formulario">
+            <label for="elegir-fecha">Fecha: </label>
+            <input name="fecha" id="elegir-fecha" type="date">
+
+            <label for="elegir-moneda">Moneda base: </label>
+            <select name="base" id="elegir-moneda">
+                <option value="USD" selected="true">Dólar Estados Unidos - USD</option>
+                <option value="EUR">Euro - EUR</option>
+                <option value="ARS">Peso Argentino - ARS</option>
+                <option value="BTC">Bitcoin - BTC</option>
+            </select>
+            <button type="button" id="boton-consultar">Consultar</button>
+        </form>
+    </div>
+
+    <div class="resultados-container">
+        <h2>Resultados</h2>
+        <p id="resultados">Prueba de consulta api</p>
+        <p id="api-result"></p>
+    </div>
+
+    <script type="text/javascript" src="/src/main.js"></script>
+</body>
+</html>
