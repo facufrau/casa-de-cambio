@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <link rel="stylesheet" type="text/css" href="src/estilos.css">
     <title>Casa de cambio</title>
 </head>
+
 <body>
     <div class="titulos">
         <img src="src/images/logo.png">
-        <h1>Casa de cambio</h1>        
+        <h1>Casa de cambio</h1>
     </div>
 
     <div class="inputs-container">
         <h2>Datos a consultar</h2>
-        <form id="formulario">
+        <form id="input-form">
             <label for="elegir-fecha">Fecha: </label>
             <input name="fecha" id="elegir-fecha" type="date">
 
@@ -28,15 +30,63 @@
             </select>
             <button type="button" id="boton-consultar">Consultar</button>
         </form>
+
+        <form id="output-form">
+            <fieldset>
+                <legend>Cotizaciones a mostrar:</legend>
+
+                <input type="checkbox" id="ARS" name="ARS" value="ARS" checked>
+                <label for="ARS">ARS: Peso Argentino</label><br />
+
+                <input type="checkbox" id="AUD" name="AUD" value="AUD">
+                <label for="AUD">AUD: Dolar Australiano</label><br />
+
+                <input type="checkbox" id="BRL" name="BRL" value="BRL">
+                <label for="BRL">BRL: Real Brasileño</label><br />
+
+                <input type="checkbox" id="BTC" name="BTC" value="BTC" checked>
+                <label for="BTC">BTC: Bitcoin</label><br />
+
+                <input type="checkbox" id="CHF" name="CHF" value="CHF">
+                <label for="CHF">CHF: Franco Suizo</label><br />
+
+                <input type="checkbox" id="CLP" name="CLP" value="CLP">
+                <label for="CLP">CLP: Peso Chileno</label><br />
+
+                <input type="checkbox" id="EUR" name="EUR" value="EUR" checked>
+                <label for="EUR">EUR: Euro</label><br />
+
+                <input type="checkbox" id="JPY" name="JPY" value="JPY">
+                <label for="JPY">JPY: Yen Japonés</label><br />
+
+                <input type="checkbox" id="GBP" name="GBP" value="GBP">
+                <label for="GBP">GBP: Libra Esterlina</label><br />
+
+                <input type="checkbox" id="PYG" name="PYG" value="PYG">
+                <label for="PYG">PYG: Peso Paraguayo</label><br />
+
+                <input type="checkbox" id="USD" name="USD" value="USD" checked>
+                <label for="USD">USD: Dolar Estadounidense</label><br />
+
+                <input type="checkbox" id="UYU" name="UYU" value="UYU">
+                <label for="UYU">UYU: Peso Uruguayo</label><br />
+
+                <button type="button" id="filtrar">Filtrar cotizaciones</button>
+                <button type="button" id="seleccionar-todos">Seleccionar todos</button>
+                <button type="button" id="desmarcar-todos">Desmarcar todos</button>
+            </fieldset>
+        </form>
+
     </div>
 
     <div class="cotizaciones-container">
         <h2>Resultados</h2>
         <ul id="lista-cotizaciones">
-            
+
         </ul>
     </div>
 
     <script type="text/javascript" src="src/main.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,7 @@
 body {
     font-family: Helvetica, sans-serif;
+    background-color: #D0E2F2;
+    color: #005a26;
 }
 
 #boton-consultar {
