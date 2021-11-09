@@ -1,7 +1,12 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-color: #D0E2F2;
+    /* fuentes hind, carme, roboto, montserrat*/
+    background-color: #ffffff;
     color: #005a26;
+}
+
+.oculto {
+    display: none;
 }
 
 #boton-consultar {
