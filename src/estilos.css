@@ -1,14 +1,10 @@
-body {
-    font-family: Helvetica, sans-serif;
-    /* fuentes hind, carme, roboto, montserrat*/
-    background-color: #ffffff;
-    color: #005a26;
-}
-
 .oculto {
     display: none;
 }
 
-#boton-consultar {
-    display: block;
+.titulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
